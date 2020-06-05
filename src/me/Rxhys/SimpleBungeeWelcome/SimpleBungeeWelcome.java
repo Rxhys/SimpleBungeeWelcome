@@ -5,10 +5,11 @@ import java.io.IOException;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public class SimpleBungeeWelcome extends Plugin {
+	@Override
 	public void onEnable() {
-		super.onEnable();
 		setupDbFile(this);
 		getProxy().getPluginManager().registerListener(this, new JoinEvent(this));
+		super.onEnable();
 	}
 
 	public void setupDbFile(Plugin plugin) {
@@ -28,9 +29,5 @@ public class SimpleBungeeWelcome extends Plugin {
 				e.printStackTrace();
 			}
 		}
-	}
-
-	public void onDisable() {
-		super.onDisable();
 	}
 }

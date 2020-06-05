@@ -17,7 +17,7 @@ import net.md_5.bungee.api.plugin.Listener;
 public class JoinEvent implements Listener {
 	public Plugin plugin;
 
-	public JoinEvent(Plugin plugin) {
+	public JoinEvent(final Plugin plugin) {
 		this.plugin = plugin;
 	}
 

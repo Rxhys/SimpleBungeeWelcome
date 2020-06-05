@@ -14,14 +14,14 @@ public class SimpleBungeeWelcome extends Plugin {
 
 	public void setupDbFile(Plugin plugin) {
 		if (!getDataFolder().exists()) getDataFolder().mkdir();
-		File playersfile = new File(plugin.getDataFolder(), "/players.sbw");
+		final File playersfile = new File(plugin.getDataFolder(), "/players.sbw");
 		if (!playersfile.exists())
 			try {
 				playersfile.createNewFile();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-		File file = new File(getDataFolder(), "/config.yml");
+		final File file = new File(getDataFolder(), "/config.yml");
 		if (!file.exists()) {
 			try {
 				file.createNewFile();

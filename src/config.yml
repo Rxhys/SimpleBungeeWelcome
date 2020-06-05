@@ -1,0 +1,8 @@
+#################################
+###### SimpleBungeeWelcome ######
+## by Rxhys  (minecraftguy719) ##
+#################################
+
+# {PLAYER} is replaced with the player's username.
+
+message: '&4Welcome {PLAYER} to my Server!'
